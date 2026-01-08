@@ -1,0 +1,464 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4797,
+      "max": [
+        0.007499996572732925,
+        0.029814714565873146,
+        0.010742437094449997
+      ],
+      "min": [
+        -0.007500004023313522,
+        -0.0007930425927042961,
+        -0.0031000059098005295
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 57564,
+      "componentType": 5126,
+      "count": 4797,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4797,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 12342,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 115128,
+      "componentType": 5126,
+      "count": 16308,
+      "max": [
+        -0.007594733498990536,
+        0.005560154095292091,
+        0.002240406349301338
+      ],
+      "min": [
+        -0.02907322719693184,
+        -0.009476041421294212,
+        -0.009905245155096054
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 310824,
+      "componentType": 5126,
+      "count": 16308,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38376,
+      "componentType": 5126,
+      "count": 16308,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 49368,
+      "componentType": 5125,
+      "count": 57960,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 506520,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.0006166527164168656,
+        -9.992084233090281e-05,
+        0.0006166510283946991
+      ],
+      "min": [
+        -0.0006166616803966463,
+        -0.03291519358754158,
+        -0.0006166640669107437
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 507288,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.7304227352142334,
+        0.6829994916915894,
+        0.7304227352142334
+      ],
+      "min": [
+        -0.7304227352142334,
+        -0.6884034276008606,
+        -0.7304227352142334
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 168840,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 281208,
+      "componentType": 5125,
+      "count": 372,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "YouniqueĪdeaStudio (https://sketchfab.com/sinnervoncrawsz)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/laser-module-dummy-8595fbe44cd04dae9f3f9935cde9093c",
+      "title": "Laser Module - DUMMY"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 282696,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 169352,
+      "byteOffset": 282696,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 508056,
+      "byteOffset": 452048,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 960104,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_transmission"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material.028",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.027",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.6951302231736229
+        }
+      },
+      "name": "Material.025",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7999999999999999,
+          0.0030520599999999997,
+          0.0,
+          0.30486977682637706
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9614808594717653
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "laser module.001_Material.028_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "LASER RECEVER_Material.027_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "laser module.002_Material.025_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.012184324784762168,
+        0.004155710223248121,
+        0.001142613668101423,
+        0.0,
+        -0.0028030207314513333,
+        0.01024342005933221,
+        -0.007365370095168797,
+        0.0,
+        -0.00327392227656631,
+        0.006695944433023013,
+        0.01055836292417567,
+        0.0,
+        4.696812629699707,
+        5.107644557952884,
+        -14.291804313659666,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "1421e684b715473eb48b81de888aece6.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        4.331257681400302e-05,
+        1.1102230246251565e-14,
+        -99.99999999999062,
+        0.0,
+        99.99999999999054,
+        -4.371139006309477e-06,
+        4.331257681955414e-05,
+        0.0,
+        -4.371138995207247e-06,
+        -99.99999999999991,
+        -1.9095836023552692e-12,
+        0.0,
+        25.671968460083008,
+        18.16449546813965,
+        5.730348110198975,
+        1.0
+      ],
+      "name": "laser module.001"
+    },
+    {
+      "mesh": 0,
+      "name": "laser module.001_Material.028_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        23.370849609375,
+        18.16449546813965,
+        5.266804218292236,
+        1.0
+      ],
+      "name": "LASER RECEVER"
+    },
+    {
+      "mesh": 1,
+      "name": "LASER RECEVER_Material.027_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        4.331257681400302e-05,
+        1.1102230246251565e-14,
+        -99.99999999999062,
+        0.0,
+        99.99999999999054,
+        -4.371139006309477e-06,
+        4.331257681955414e-05,
+        0.0,
+        -4.371138995207247e-06,
+        -99.99999999999991,
+        -1.9095836023552692e-12,
+        0.0,
+        25.671968460083008,
+        18.16449546813965,
+        5.730348110198975,
+        1.0
+      ],
+      "name": "laser module.002"
+    },
+    {
+      "mesh": 2,
+      "name": "laser module.002_Material.025_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
