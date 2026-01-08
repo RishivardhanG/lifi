@@ -5,17 +5,21 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Detect scroll to change background style
+  // Optimized Scroll Listener
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Technology', href: '#technology' },
     { name: 'Applications', href: '#applications' },
+    { name: 'Technology', href: '#technology' },
     { name: 'Our Team', href: '#team' },
+    { name: 'Contact Us', href: '#contact' }, // Added Contact Us
   ];
 
   return (
@@ -25,20 +29,20 @@ const Navbar = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-void/80 backdrop-blur-md border-b border-white/10 py-3' 
+          ? 'bg-[#02040a]/95 border-b border-white/10 py-3 shadow-lg' 
           : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         {/* Logo Area */}
-        <div className="flex items-center gap-2 group cursor-pointer">
+        <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="w-8 h-8 relative">
-            <div className="absolute inset-0 bg-neon-cyan rounded-full opacity-20 group-hover:animate-ping" />
-            <div className="absolute inset-0 bg-neon-cyan rounded-full scale-50" />
+            <div className="absolute inset-0 bg-cyan-400 rounded-full opacity-20 group-hover:animate-ping" />
+            <div className="absolute inset-0 bg-cyan-400 rounded-full scale-50" />
           </div>
           <span className="font-sans font-bold text-2xl tracking-tighter text-white">
-            Li-Fi <span className="text-neon-cyan">.</span>
+            Li-Fi <span className="text-cyan-400">.</span>
           </span>
         </div>
 
@@ -48,15 +52,19 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-sm font-medium text-gray-300 hover:text-white hover:text-neon-cyan transition-colors duration-300 relative group"
+              className="text-sm font-medium text-gray-300 hover:text-white hover:text-cyan-400 transition-colors duration-300 relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-cyan transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <button className="px-5 py-2 rounded-full border border-white/20 text-sm font-bold text-white hover:bg-white hover:text-black transition-all duration-300 active:scale-95">
+          {/* Linked the Prototype Button */}
+          <a 
+            href="#prototype"
+            className="px-5 py-2 rounded-full border border-white/20 text-sm font-bold text-white hover:bg-white hover:text-black transition-all duration-300 active:scale-95"
+          >
             See Prototype
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -77,14 +85,26 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-void-light border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-[#0a0a0a] border-b border-white/10 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {navLinks.map((link) => (
-                <a key={link.name} href={link.href} className="text-gray-300 text-lg">
+                <a 
+                  key={link.name} 
+                  href={link.href} 
+                  className="text-gray-300 text-lg"
+                  onClick={() => setIsOpen(false)}
+                >
                   {link.name}
                 </a>
               ))}
+              <a 
+                 href="#prototype"
+                 className="text-cyan-400 text-lg font-bold"
+                 onClick={() => setIsOpen(false)}
+              >
+                 See Prototype
+              </a>
             </div>
           </motion.div>
         )}
